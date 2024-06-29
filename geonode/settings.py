@@ -1122,7 +1122,7 @@ PYCSW = {
             "home": ".",
             "url": CATALOGUE["default"]["URL"],
             "encoding": "UTF-8",
-            "language": LANGUAGE_CODE if LANGUAGE_CODE in ("en", "fr", "el") else "en",
+            "language": LANGUAGE_CODE if LANGUAGE_CODE in ("en", "fr", "el", "pt-br", "pt") else "en",
             "maxrecords": "20",
             "pretty_print": "true",
             # 'domainquerytype': 'range',
@@ -1548,6 +1548,8 @@ if GEONODE_CLIENT_LAYER_PREVIEW_LIBRARY == "mapstore":
         ("es-es", "Español"),
         ("fr-fr", "Français"),
         ("it-it", "Italiano"),
+        ("pt-br", "Português Brasileiro"),
+        ("pt-pt", "Português"),
     )
 
     if os.getenv("LANGUAGES"):
